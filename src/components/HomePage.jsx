@@ -1,9 +1,10 @@
 import portatil from "../assets/portatil.jpg";
+import portada from "../assets/portada.png";
 
 function HomePage() {
   return (
     <div>
-      <div className="bg-custom-blue p-10 flex justify-evenly">
+      <header className="bg-custom-blue p-10 flex justify-evenly">
         <div>
           <h1 className="text-white text-7xl font-bold text-left pb-10">
             Bienvenido
@@ -24,7 +25,7 @@ function HomePage() {
             el objetivo de mejorar mis habilidades y contribuir de manera eficaz
             en proyectos reales.
           </p>
-          <button className=" m-7 p-3 bg-blue-300 rounded-lg">
+          <button className="mt-7 p-3 bg-blue-300 rounded-lg">
             <a href="/cv.pdf" download="IvanBallesterCV.pdf">
               Descargar CV
             </a>
@@ -36,8 +37,7 @@ function HomePage() {
           width={400}
           style={{ borderRadius: "30%" }}
         />
-      </div>
-
+      </header>
       <svg
         className="w-full h-auto"
         xmlns="http://www.w3.org/2000/svg"
@@ -49,26 +49,62 @@ function HomePage() {
           fill="#07131F"
         />
       </svg>
-
-      <h1 className=" text-center m-5 font-bold text-xl">MIS PROYECTOS</h1>
+      <h1 className=" text-center m-5 font-bold text-3xl">MIS PROYECTOS</h1>
       <div className=" flex justify-center">
-        <div className=" border-2 p-4 w-96 m-4">
-          <img src="" alt="" />
-          <h2 className=" font-bold">TrueFilms</h2>
-          <p>
-            Este es mi proyecto final de Bootcamp, donde desarrollo todo lo
-            aprendido. Está basado en un trabajo MERN Full-Stack{" "}
+        <div className=" border-2 p-4 w-96 min-h-96 m-4 rounded-xl shadow-2xl">
+          <img src={portada} alt="img" className=" h-2/6 w-full" />
+          <h2 className=" font-bold pt-3">TrueFilms</h2>
+          <p className="mb-5">
+            Este es mi proyecto final del Bootcamp, en el que aplico y
+            desarrollo todo lo aprendido a lo largo del curso. El proyecto está
+            construido utilizando el stack MERN (MongoDB, Express, React,
+            Node.js), lo que me permite abordar tanto el desarrollo front-end
+            como back-end. A través de este trabajo, demuestro mis habilidades
+            como desarrollador full-stack, implementando soluciones completas e
+            integradas que abarcan desde la creación de interfaces de usuario
+            dinámicas hasta la gestión eficiente de bases de datos y APIs.
           </p>
-        </div>
-        <div className=" border-2 p-4 w-96 m-4">
-          <img src="" alt="" />
-          <h2 className=" font-bold">TrueFilms</h2>
-          <p>
-            Este es mi proyecto final de Bootcamp, donde desarrollo todo lo
-            aprendido. Está basado en un trabajo MERN Full-Stack{" "}
-          </p>
+          <span className="bg-yellow-300 border rounded-md p-0.5 mr-1 ">
+            React
+          </span>
+          <span className="bg-yellow-300 border rounded-md p-0.5 mr-1 ">
+            JavaScript
+          </span>
+          <span className="bg-yellow-300 border rounded-md p-0.5 mr-1 ">
+            Node.js
+          </span>
+          <span className="bg-yellow-300 border rounded-md p-0.5 mr-1 ">
+            Express.js
+          </span>
+          <span className="bg-yellow-300 border rounded-md p-0.5 mr-1 ">
+            MongoDB
+          </span>
         </div>
       </div>
+      <svg
+        className="w-full h-auto block"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1487 79"
+        preserveAspectRatio="none"
+      >
+        <path
+          d="M-100 0C-100 0 218.416 55.835 693.5 55.835C1168.58 55.835 1487 0 1487
+      0V79H-100V0Z"
+          fill="#07131F"
+        />
+      </svg>
+      <footer className="  bg-custom-blue flex row justify-around p-10 m-0">
+        <h1 className=" text-white">© 2024 ivanballester.es</h1>
+
+        <h1>
+          <a href="" className="text-white">
+            Linkedin
+          </a>
+          <a href="" className="text-white">
+            GitHub
+          </a>
+        </h1>
+      </footer>
     </div>
   );
 }
