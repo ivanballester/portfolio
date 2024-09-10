@@ -1,9 +1,12 @@
 import portatil from "../assets/portatil.jpg";
 import portada from "../assets/portada.png";
+import img1 from "../assets/linkedin.png";
+import img2 from "../assets/icon.png";
+import web from "../assets/web.png";
 
 function HomePage() {
   return (
-    <div>
+    <div className=" font-serif">
       <header className="bg-custom-blue p-10 flex justify-evenly">
         <div>
           <h1 className="text-white text-7xl font-bold text-left pb-10">
@@ -51,7 +54,7 @@ function HomePage() {
       </svg>
       <h1 className=" text-center m-5 font-bold text-3xl">MIS PROYECTOS</h1>
       <div className=" flex justify-center">
-        <div className=" border-2 p-4 w-96 min-h-96 m-4 rounded-xl shadow-2xl">
+        <div className=" border-2 p-4 w-96 m-4 rounded-xl shadow-2xl">
           <img src={portada} alt="img" className=" h-2/6 w-full" />
           <h2 className=" font-bold pt-3">TrueFilms</h2>
           <p className="mb-5">
@@ -79,6 +82,11 @@ function HomePage() {
           <span className="bg-yellow-300 border rounded-md p-0.5 mr-1 ">
             MongoDB
           </span>
+          <div>
+            <a href="https://truefilms.netlify.app/">
+              <img src={web} alt="" width={30} className=" mt-5" />
+            </a>
+          </div>
         </div>
       </div>
       <svg
@@ -96,12 +104,18 @@ function HomePage() {
       <footer className="  bg-custom-blue flex row justify-around p-10 m-0">
         <h1 className=" text-white">© 2024 ivanballester.es</h1>
 
-        <h1>
-          <a href="" className="text-white">
-            Linkedin
+        <h1 className="flex ">
+          <a
+            href="https://www.linkedin.com/in/ivanballester/"
+            className="text-white pr-3"
+          >
+            <img src={img1} alt="" width={30} />
           </a>
-          <a href="" className="text-white">
-            GitHub
+          <a
+            href="https://github.com/ivanballester"
+            className="text-white pl-3"
+          >
+            <img src={img2} alt="" width={30} />
           </a>
         </h1>
       </footer>
