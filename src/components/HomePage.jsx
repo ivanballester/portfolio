@@ -151,7 +151,7 @@ function HomePage() {
         />
       </svg>
       <footer className="  bg-custom-blue flex row justify-around p-10 m-0">
-        <h1 className=" text-white">© 2024 ivanballester.es</h1>
+        <h1 className=" text-white">© 2024 ivanballester.netlify.app</h1>
 
         <h1 className="flex ">
           <a
