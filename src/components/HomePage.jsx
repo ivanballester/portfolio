@@ -3,6 +3,8 @@ import portada from "../assets/portada.png";
 import img1 from "../assets/linkedin.png";
 import img2 from "../assets/icon.png";
 import web from "../assets/web.png";
+import img3 from "../assets/github.png";
+import img4 from "../assets/star.jpg";
 
 function HomePage() {
   return (
@@ -39,6 +41,7 @@ function HomePage() {
           alt="image"
           width={400}
           style={{ borderRadius: "30%" }}
+          className="hidden lg:block"
         />
       </header>
       <svg
@@ -53,7 +56,7 @@ function HomePage() {
         />
       </svg>
       <h1 className=" text-center m-5 font-bold text-3xl">MIS PROYECTOS</h1>
-      <div className=" flex justify-center">
+      <div className=" flex flex-row flex-wrap justify-center">
         <div className=" border-2 p-4 w-96 m-4 rounded-xl shadow-2xl">
           <img src={portada} alt="img" className=" h-2/6 w-full" />
           <h2 className=" font-bold pt-3">TrueFilms</h2>
@@ -82,10 +85,56 @@ function HomePage() {
           <span className="bg-yellow-300 border rounded-md p-0.5 mr-1 ">
             MongoDB
           </span>
-          <div>
+          <div className=" flex row-auto items-center justify-between">
             <a href="https://truefilms.netlify.app/">
               <img src={web} alt="" width={30} className=" mt-5" />
             </a>
+            <div className="flex">
+              <a href="https://github.com/ivanballester/OlimpoCinematografico-client">
+                <img src={img3} alt="Cliente" width={30} className=" mt-5" />
+              </a>
+              <a href="https://github.com/ivanballester/OlimpoCinematografico-server">
+                <img src={img3} alt="Cliente" width={30} className=" mt-5" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className=" border-2 p-4 w-96 m-4 rounded-xl shadow-2xl">
+          <img src={img4} alt="img" className=" h-2/6 w-full" />
+          <h2 className=" font-bold pt-3">Star Atropellao</h2>
+          <p className="mb-5">
+            {" "}
+            Este es mi primer proyecto, donde utilizo JavaScript, HTML y CSS
+            para crear un videojuego web. A lo largo de este trabajo, aplico los
+            conceptos fundamentales de manipulación del DOM, lo que me permite
+            interactuar con los elementos de la página de manera dinámica. El
+            proyecto consiste en un juego sencillo pero funcional, donde el
+            jugador puede interactuar con los gráficos y los controles a través
+            de eventos en el navegador. Este proyecto me ayudó a mejorar mis
+            habilidades en programación con JavaScript.
+          </p>
+          <span className="bg-yellow-300 border rounded-md p-0.5 mr-1 ">
+            JavaScript
+          </span>
+          <span className="bg-yellow-300 border rounded-md p-0.5 mr-1 ">
+            HTML
+          </span>
+          <span className="bg-yellow-300 border rounded-md p-0.5 mr-1 ">
+            CSS
+          </span>
+          <span className="bg-yellow-300 border rounded-md p-0.5 mr-1 ">
+            Manipulacion DOM
+          </span>
+
+          <div className=" flex row-auto items-center justify-between">
+            <a href="https://ivanballester.github.io/STAR-ATROPELLADO/">
+              <img src={web} alt="" width={30} className=" mt-5" />
+            </a>
+            <div className="flex">
+              <a href="https://github.com/ivanballester/STAR-ATROPELLADO">
+                <img src={img3} alt="Cliente" width={30} className=" mt-5" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
