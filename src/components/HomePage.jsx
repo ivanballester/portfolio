@@ -11,7 +11,7 @@ function HomePage() {
     <div className=" font-serif">
       <header className="bg-custom-blue p-10 flex justify-evenly">
         <div>
-          <h1 className="text-white text-7xl font-bold text-left pb-10">
+          <h1 className="text-white text-4xl  sm:text-5xl md:text-6xl lg:text-7xl font-bold text-left pb-10 ">
             Bienvenido
           </h1>
           <p className="text-white text-justify max-w-xl">
@@ -57,7 +57,7 @@ function HomePage() {
       </svg>
       <h1 className=" text-center m-5 font-bold text-3xl">MIS PROYECTOS</h1>
       <div className=" flex flex-row flex-wrap justify-center">
-        <div className=" border-2 p-4 w-96 m-4 rounded-xl shadow-2xl">
+        <div className=" border-2 p-4 w-80 sm:w-96 m-4 rounded-xl shadow-2xl">
           <img src={portada} alt="img" className=" h-2/6 w-full" />
           <h2 className=" font-bold pt-3">TrueFilms</h2>
           <p className="mb-5">
@@ -70,21 +70,23 @@ function HomePage() {
             integradas que abarcan desde la creación de interfaces de usuario
             dinámicas hasta la gestión eficiente de bases de datos y APIs.
           </p>
-          <span className="bg-yellow-300 border rounded-md p-0.5 mr-1 ">
-            React
-          </span>
-          <span className="bg-yellow-300 border rounded-md p-0.5 mr-1 ">
-            JavaScript
-          </span>
-          <span className="bg-yellow-300 border rounded-md p-0.5 mr-1 ">
-            Node.js
-          </span>
-          <span className="bg-yellow-300 border rounded-md p-0.5 mr-1 ">
-            Express.js
-          </span>
-          <span className="bg-yellow-300 border rounded-md p-0.5 mr-1 ">
-            MongoDB
-          </span>
+          <div className="flex-wrap">
+            <p className="bg-yellow-300 border rounded-md p-0.5 mr-1 inline-block ">
+              React
+            </p>
+            <p className="bg-yellow-300 border rounded-md p-0.5 mr-1 inline-block">
+              JavaScript
+            </p>
+            <p className="bg-yellow-300 border rounded-md p-0.5 mr-1 inline-block">
+              Node.js
+            </p>
+            <p className="bg-yellow-300 border rounded-md p-0.5 mr-1 inline-block">
+              Express.js
+            </p>
+            <p className="bg-yellow-300 border rounded-md p-0.5 mr-1 inline-block">
+              MongoDB
+            </p>
+          </div>
           <div className=" flex row-auto items-center justify-between">
             <a href="https://truefilms.netlify.app/">
               <img src={web} alt="" width={30} className=" mt-5" />
@@ -99,7 +101,7 @@ function HomePage() {
             </div>
           </div>
         </div>
-        <div className=" border-2 p-4 w-96 m-4 rounded-xl shadow-2xl">
+        <div className=" border-2 p-4 w-80 sm:w-96 m-4 rounded-xl shadow-2xl">
           <img src={img4} alt="img" className=" h-2/6 w-full" />
           <h2 className=" font-bold pt-3">Star Atropellao</h2>
           <p className="mb-5">
@@ -113,18 +115,18 @@ function HomePage() {
             de eventos en el navegador. Este proyecto me ayudó a mejorar mis
             habilidades en programación con JavaScript.
           </p>
-          <span className="bg-yellow-300 border rounded-md p-0.5 mr-1 ">
+          <p className="bg-yellow-300 border rounded-md p-0.5 mr-1 inline-block ">
             JavaScript
-          </span>
-          <span className="bg-yellow-300 border rounded-md p-0.5 mr-1 ">
+          </p>
+          <p className="bg-yellow-300 border rounded-md p-0.5 mr-1 inline-block">
             HTML
-          </span>
-          <span className="bg-yellow-300 border rounded-md p-0.5 mr-1 ">
+          </p>
+          <p className="bg-yellow-300 border rounded-md p-0.5 mr-1 inline-block">
             CSS
-          </span>
-          <span className="bg-yellow-300 border rounded-md p-0.5 mr-1 ">
+          </p>
+          <p className="bg-yellow-300 border rounded-md p-0.5 mr-1 inline-block ">
             Manipulacion DOM
-          </span>
+          </p>
 
           <div className=" flex row-auto items-center justify-between">
             <a href="https://ivanballester.github.io/STAR-ATROPELLADO/">
