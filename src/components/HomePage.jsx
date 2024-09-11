@@ -115,18 +115,23 @@ function HomePage() {
             de eventos en el navegador. Este proyecto me ayudó a mejorar mis
             habilidades en programación con JavaScript.
           </p>
-          <p className="bg-yellow-300 border rounded-md p-0.5 mr-1 inline-block ">
-            JavaScript
-          </p>
-          <p className="bg-yellow-300 border rounded-md p-0.5 mr-1 inline-block">
-            HTML
-          </p>
-          <p className="bg-yellow-300 border rounded-md p-0.5 mr-1 inline-block">
-            CSS
-          </p>
-          <p className="bg-yellow-300 border rounded-md p-0.5 mr-1 inline-block ">
-            Manipulacion DOM
-          </p>
+          <div className="flex-wrap">
+            <p className="bg-yellow-300 border rounded-md p-0.5 mr-1 inline-block ">
+              JavaScript
+            </p>
+            <p className="bg-yellow-300 border rounded-md p-0.5 mr-1 inline-block">
+              HTML
+            </p>
+            <p className="bg-yellow-300 border rounded-md p-0.5 mr-1 inline-block">
+              CSS
+            </p>
+            <p className="bg-yellow-300 border rounded-md p-0.5 mr-1 inline-block ">
+              DOM Manipulation
+            </p>
+            <p className="bg-yellow-300 border rounded-md p-0.5 mr-1 inline-block ">
+              Git
+            </p>
+          </div>
 
           <div className=" flex row-auto items-center justify-between">
             <a href="https://ivanballester.github.io/STAR-ATROPELLADO/">
