@@ -31,7 +31,7 @@ function HomePage() {
             en proyectos reales.
           </p>
           <button className="mt-7 p-3 bg-blue-300 rounded-lg">
-            <a href="/cv.pdf" download="IvanBallesterCV.pdf">
+            <a href="/cv1.pdf" download="Ivan Ballester FullStack 2024.pdf">
               Descargar CV
             </a>
           </button>
